@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/RAID_5.dir/RAID_5/main.cpp.o CMakeFiles/RAID_5.dir/RAID_5/DiskNode.cpp.o CMakeFiles/RAID_5.dir/RAID_5/TECMFS_Disk.cpp.o  -o RAID_5 

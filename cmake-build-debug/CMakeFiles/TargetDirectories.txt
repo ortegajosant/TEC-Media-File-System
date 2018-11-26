@@ -1,0 +1,3 @@
+/home/christian/Escritorio/RAID 5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/christian/Escritorio/RAID 5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/christian/Escritorio/RAID 5/cmake-build-debug/CMakeFiles/RAID_5.dir

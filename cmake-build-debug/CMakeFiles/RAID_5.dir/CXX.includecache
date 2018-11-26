@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/christian/Escritorio/RAID 5/RAID 5/DiskNode.h
+TECMFS_Disk.h
+/home/christian/Escritorio/RAID 5/RAID 5/TECMFS_Disk.h
+Estructuras/ListaDoble.h
+/home/christian/Escritorio/RAID 5/RAID 5/Estructuras/ListaDoble.h
+
+/home/christian/Escritorio/RAID 5/RAID 5/Estructuras/ListaDoble.h
+iostream
+-
+
+/home/christian/Escritorio/RAID 5/RAID 5/TECMFS_Disk.h
+string
+-
+
+/home/christian/Escritorio/RAID 5/RAID 5/main.cpp
+iostream
+-
+DiskNode.h
+/home/christian/Escritorio/RAID 5/RAID 5/DiskNode.h
+Estructuras/ListaDoble.h
+/home/christian/Escritorio/RAID 5/RAID 5/Estructuras/ListaDoble.h
+iostream
+-
+cmath
+-
+string.h
+-
+
