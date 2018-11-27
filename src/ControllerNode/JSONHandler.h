@@ -21,6 +21,9 @@ public:
     static Document stringToJson(string stringJSON);
     static string jsonToString(Document document);
 
+    static string saveAnswer();
+
+    static string videoAnswer(string videoFile);
 };
 
 

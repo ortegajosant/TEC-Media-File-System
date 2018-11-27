@@ -62,7 +62,7 @@ string TECMFS_Disk::readData(string name, int disk) {
         case 3:
             return disk3.readData(name);
         default:
-            return "Empty";
+            return "empty file";
     }
 }
 
