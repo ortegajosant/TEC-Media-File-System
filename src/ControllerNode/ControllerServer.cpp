@@ -6,6 +6,8 @@
 #include <iostream>
 #include <fwd.h>
 #include <filereadstream.h>
+#include <stringbuffer.h>
+#include <prettywriter.h>
 #include "ControllerServer.h"
 #include "JSONHandler.h"
 
@@ -32,40 +34,58 @@ int ControllerServer::run() {
     listen(servidor, 5);
 
     unsigned int tamanoDireccion;
+    const int size = 1024;
 
-    char *buffer = (char *) malloc(2048);
+    char *buffer = (char *) malloc(size);
 
     std::string respuestaFinal;
 
     ssize_t bytes = 0;
 
+    bool isVideo = false;
+
     while (true) {
         cliente = accept(servidor, (struct sockaddr *) &direccionCliente, &tamanoDireccion);
         printf("Recibí el cliente: %d!!\n", cliente);
-        bytes = recv(cliente, buffer, 2048, 0) <= 0;
+        bytes = recv(cliente, buffer, size, 0) <= 0;
+
         if (bytes < 0) {
             perror("Se desconectó el cliente\n");
             break;
         }
         printf("Recibí: %d con el mensaje: %s\n", (int) bytes, buffer);
 
-        respuestaFinal = std::string(buffer);
+        respuestaFinal = string(buffer);
 
-        std::cout << respuestaFinal << endl;
+        string respuesta = processRequest(respuestaFinal);
 
-        send(cliente, "Hola", 5, 0);
-        memset(buffer, 0, 2047);
+        send(cliente, respuesta.c_str(), respuesta.length(), 0);
+        memset(buffer, 0, size - 1);
         close(cliente);
     }
-
     free(buffer);
-
 }
 
 string ControllerServer::processRequest(string jsonString) {
     Document jsonDoc = JSONHandler::stringToJson(jsonString);
-    string opCode = jsonDoc.GetString();
-
+    string opCode = jsonDoc["opCode"].GetString();
+    if (opCode == "1") {
+        string videoInfo = jsonDoc["video"].GetString();
+        string name = jsonDoc["name"].GetString();
+        saveData(videoInfo, name);
+        return JSONHandler::saveAnswer();
+    } else if (opCode == "2") {
+        StringBuffer stringBuffer;
+        PrettyWriter<StringBuffer> writer(stringBuffer);
+        videoMetaData.Accept(writer);
+        return stringBuffer.GetString();
+    } else if (opCode == "3") {
+        string name = jsonDoc["name"].GetString();
+        string videoInfo = readData(name);
+        string answer = JSONHandler::videoAnswer(videoInfo);
+        return answer;
+    }
+    return "holax2";
 }
 
 bool ControllerServer::saveData(string videoInfo, string name) {
@@ -99,7 +119,9 @@ string ControllerServer::readData(string videoName) {
     parts[3] = diskNodesHandler.readData(videoName, 3);
 
     for (int i = 0; i < lenght; i++) {
-        if (parts[i] == "EmptyFile") {
+        if (parts[i] == "empty file") {
+            cout<< "holoolola"<<endl;
+
             corruptedDisk[i] = true;
             mistakes += 1;
         }
@@ -108,6 +130,7 @@ string ControllerServer::readData(string videoName) {
     if (mistakes == 0) {
         return parts[0] + parts[1] + parts[2];
     } else if (mistakes == 1) {
+        cout<< "holoolola"<<endl;
         int disk;
         for (int i = 0; i < lenght; i++) {
             if (corruptedDisk[i]) {
@@ -120,7 +143,7 @@ string ControllerServer::readData(string videoName) {
         parts[disk] = repaired;
         return parts[0] + parts[1] + parts[2];
     } else {
-        cout<<"El error es grave"<< endl;
+        cout << "El error es grave" << endl;
         return "NO_DATA";
     }
 }
@@ -142,7 +165,7 @@ string ControllerServer::repairCorruptedDisk(int disk, string disk0, string disk
 }
 
 void ControllerServer::loadMetaData() {
-    FILE* fp = fopen("../resources/metaData.json", "rb");
+    FILE *fp = fopen("../resources/metaData.json", "rb");
     char readBuffer[65536];
     FileReadStream is(fp, readBuffer, sizeof(readBuffer));
     videoMetaData.ParseStream(is);

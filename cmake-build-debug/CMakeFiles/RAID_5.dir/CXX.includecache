@@ -44,10 +44,6 @@ rapidjson.h
 ../rapidjson.h
 ../lib/include/rapidjson/rapidjson.h
 
-../lib/include/rapidjson/fwd.h
-rapidjson.h
-../lib/include/rapidjson/rapidjson.h
-
 ../lib/include/rapidjson/internal/biginteger.h
 ../rapidjson.h
 ../lib/include/rapidjson/rapidjson.h
@@ -198,18 +194,6 @@ src/RAID 5/Estructuras/ListaDoble.h
 src/ControllerNode/ControllerServer.h
 /home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/ControllerServer.h
 
-/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/ControllerServer.cpp
-unistd.h
--
-iostream
--
-fwd.h
--
-ControllerServer.h
-/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/ControllerServer.h
-JSONHandler.h
-/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/JSONHandler.h
-
 /home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/ControllerServer.h
 stdlib.h
 -
@@ -227,18 +211,12 @@ string.h
 -
 rapidjson.h
 -
+document.h
+/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/document.h
 ../RAID 5/TECMFS_Disk.h
 /home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/TECMFS_Disk.h
 ../RAID 5/Raid5Handler.h
 /home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/Raid5Handler.h
-
-/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/JSONHandler.h
-rapidjson.h
-/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/rapidjson.h
-string
--
-document.h
--
 
 /home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/DiskNode.h
 Estructuras/ListaDoble.h

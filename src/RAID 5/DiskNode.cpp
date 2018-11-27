@@ -53,7 +53,7 @@ string DiskNode::readData(string name) {
     } else {
         cout << "empty file" << endl;
     }
-    return "";
+    return "empty file";
 }
 
 /**

@@ -35,6 +35,14 @@ string obtenerArchivo(string name) {
 
 using namespace std;
 
+bool writeData(string stringToWirte, string name) {
+    ofstream file;
+    file.open("../videosPrueba/" + name, ios::binary | ios::out);
+    file.write(stringToWirte.c_str(), stringToWirte.length());
+    file.close();
+    return true;
+}
+
 int main() {
     // Para construir un disco a la hora de instanciarlo
     // le paso la ubicacion esa ubicacion se guarda en TECMFS-Disk
@@ -47,9 +55,13 @@ int main() {
 
     ControllerServer server;
 
-    string video = obtenerArchivo("oceano");
+//    server.saveData(obtenerArchivo("oceano"), "video1.txt");
 
-    server.saveData(video, "prueba1.txt");
+    string data = server.readData("video1.txt");
+
+    cout<<data<<endl;
+
+    writeData(data, "videoReconstrido.mp4");
 
     return 0;
 }
