@@ -6,22 +6,26 @@
 #define RAID_5_TECMFS_DISK_H
 
 #include <string>
+#include "DiskNode.h"
 
 using namespace std;
 class TECMFS_Disk {
 
 private:
-    string path , ip;
-    int puerto = 0;
+    string path;
 
 public:
-    TECMFS_Disk(string path, int puerto, string ip);
     TECMFS_Disk();
+
+    DiskNode disk0;
+    DiskNode disk1;
+    DiskNode disk2;
+    DiskNode disk3;
+
     bool sendData();
-    bool startDiskNode();
-    int getSize();
-    bool setPath(string path);
-    std::string getPath();
+    string readData(string name, int disk);
+    bool saveData(string info, string name, int disk);
+    long getDiskSize(int disk);
 
 };
 #endif //RAID_5_TECMFS_DISK_H

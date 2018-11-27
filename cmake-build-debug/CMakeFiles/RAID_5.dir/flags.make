@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/lib/include/rapidjson" 
 

@@ -8,42 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/christian/Escritorio/RAID 5/cmake-build-debug"/>
+				<Option working_dir="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/christian/Escritorio/RAID 5/cmake-build-debug"/>
+				<Option working_dir="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/christian/Escritorio/RAID 5/cmake-build-debug"/>
+				<Option working_dir="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RAID_5">
-				<Option output="/home/christian/Escritorio/RAID 5/cmake-build-debug/RAID_5" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/christian/Escritorio/RAID 5/cmake-build-debug"/>
+				<Option output="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug/RAID_5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/lib/include/rapidjson"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -54,19 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 RAID_5"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 RAID_5"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RAID_5/fast">
-				<Option output="/home/christian/Escritorio/RAID 5/cmake-build-debug/RAID_5" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/christian/Escritorio/RAID 5/cmake-build-debug"/>
+				<Option output="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug/RAID_5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/lib/include/rapidjson"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -77,32 +79,56 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 RAID_5/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/christian/Escritorio/RAID\ 5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 RAID_5/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ortegajosant/Documentos/Algoritmos\ Extructuras\ datos\ Datos\ II/Proyecto\ III/ProyectoIIIGit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/christian/Escritorio/RAID 5/RAID 5/DiskNode.cpp">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/main.cpp">
 			<Option target="RAID_5"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/RAID 5/RAID 5/DiskNode.h">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/ControllerServer.cpp">
 			<Option target="RAID_5"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/RAID 5/RAID 5/Estructuras/ListaDoble.h">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/ControllerServer.h">
 			<Option target="RAID_5"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/RAID 5/RAID 5/TECMFS_Disk.cpp">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/JSONHandler.cpp">
 			<Option target="RAID_5"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/RAID 5/RAID 5/TECMFS_Disk.h">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/JSONHandler.h">
 			<Option target="RAID_5"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/RAID 5/RAID 5/main.cpp">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/RequestManager.cpp">
 			<Option target="RAID_5"/>
 		</Unit>
-		<Unit filename="/home/christian/Escritorio/RAID 5/CMakeLists.txt">
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/ControllerNode/RequestManager.h">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/DiskNode.cpp">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/DiskNode.h">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/Estructuras/ListaDoble.h">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/Raid5Handler.cpp">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/Raid5Handler.h">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/TECMFS_Disk.cpp">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/src/RAID 5/TECMFS_Disk.h">
+			<Option target="RAID_5"/>
+		</Unit>
+		<Unit filename="/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
