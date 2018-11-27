@@ -48,10 +48,10 @@ RM = /snap/clion/49/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/christian/Escritorio/RAID 5"
+CMAKE_SOURCE_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/christian/Escritorio/RAID 5/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/christian/Escritorio/RAID 5/cmake-build-debug/CMakeFiles" "/home/christian/Escritorio/RAID 5/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug/CMakeFiles" "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/christian/Escritorio/RAID 5/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ortegajosant/Documentos/Algoritmos Extructuras datos Datos II/Proyecto III/ProyectoIIIGit/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,86 +123,194 @@ RAID_5/fast:
 	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/build
 .PHONY : RAID_5/fast
 
-RAID_5/DiskNode.o: RAID_5/DiskNode.cpp.o
+main.o: main.cpp.o
 
-.PHONY : RAID_5/DiskNode.o
-
-# target to build an object file
-RAID_5/DiskNode.cpp.o:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/DiskNode.cpp.o
-.PHONY : RAID_5/DiskNode.cpp.o
-
-RAID_5/DiskNode.i: RAID_5/DiskNode.cpp.i
-
-.PHONY : RAID_5/DiskNode.i
-
-# target to preprocess a source file
-RAID_5/DiskNode.cpp.i:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/DiskNode.cpp.i
-.PHONY : RAID_5/DiskNode.cpp.i
-
-RAID_5/DiskNode.s: RAID_5/DiskNode.cpp.s
-
-.PHONY : RAID_5/DiskNode.s
-
-# target to generate assembly for a file
-RAID_5/DiskNode.cpp.s:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/DiskNode.cpp.s
-.PHONY : RAID_5/DiskNode.cpp.s
-
-RAID_5/TECMFS_Disk.o: RAID_5/TECMFS_Disk.cpp.o
-
-.PHONY : RAID_5/TECMFS_Disk.o
+.PHONY : main.o
 
 # target to build an object file
-RAID_5/TECMFS_Disk.cpp.o:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/TECMFS_Disk.cpp.o
-.PHONY : RAID_5/TECMFS_Disk.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-RAID_5/TECMFS_Disk.i: RAID_5/TECMFS_Disk.cpp.i
+main.i: main.cpp.i
 
-.PHONY : RAID_5/TECMFS_Disk.i
+.PHONY : main.i
 
 # target to preprocess a source file
-RAID_5/TECMFS_Disk.cpp.i:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/TECMFS_Disk.cpp.i
-.PHONY : RAID_5/TECMFS_Disk.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-RAID_5/TECMFS_Disk.s: RAID_5/TECMFS_Disk.cpp.s
+main.s: main.cpp.s
 
-.PHONY : RAID_5/TECMFS_Disk.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-RAID_5/TECMFS_Disk.cpp.s:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/TECMFS_Disk.cpp.s
-.PHONY : RAID_5/TECMFS_Disk.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/main.cpp.s
+.PHONY : main.cpp.s
 
-RAID_5/main.o: RAID_5/main.cpp.o
+src/ControllerNode/ControllerServer.o: src/ControllerNode/ControllerServer.cpp.o
 
-.PHONY : RAID_5/main.o
+.PHONY : src/ControllerNode/ControllerServer.o
 
 # target to build an object file
-RAID_5/main.cpp.o:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/main.cpp.o
-.PHONY : RAID_5/main.cpp.o
+src/ControllerNode/ControllerServer.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/ControllerServer.cpp.o
+.PHONY : src/ControllerNode/ControllerServer.cpp.o
 
-RAID_5/main.i: RAID_5/main.cpp.i
+src/ControllerNode/ControllerServer.i: src/ControllerNode/ControllerServer.cpp.i
 
-.PHONY : RAID_5/main.i
+.PHONY : src/ControllerNode/ControllerServer.i
 
 # target to preprocess a source file
-RAID_5/main.cpp.i:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/main.cpp.i
-.PHONY : RAID_5/main.cpp.i
+src/ControllerNode/ControllerServer.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/ControllerServer.cpp.i
+.PHONY : src/ControllerNode/ControllerServer.cpp.i
 
-RAID_5/main.s: RAID_5/main.cpp.s
+src/ControllerNode/ControllerServer.s: src/ControllerNode/ControllerServer.cpp.s
 
-.PHONY : RAID_5/main.s
+.PHONY : src/ControllerNode/ControllerServer.s
 
 # target to generate assembly for a file
-RAID_5/main.cpp.s:
-	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/RAID_5/main.cpp.s
-.PHONY : RAID_5/main.cpp.s
+src/ControllerNode/ControllerServer.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/ControllerServer.cpp.s
+.PHONY : src/ControllerNode/ControllerServer.cpp.s
+
+src/ControllerNode/JSONHandler.o: src/ControllerNode/JSONHandler.cpp.o
+
+.PHONY : src/ControllerNode/JSONHandler.o
+
+# target to build an object file
+src/ControllerNode/JSONHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/JSONHandler.cpp.o
+.PHONY : src/ControllerNode/JSONHandler.cpp.o
+
+src/ControllerNode/JSONHandler.i: src/ControllerNode/JSONHandler.cpp.i
+
+.PHONY : src/ControllerNode/JSONHandler.i
+
+# target to preprocess a source file
+src/ControllerNode/JSONHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/JSONHandler.cpp.i
+.PHONY : src/ControllerNode/JSONHandler.cpp.i
+
+src/ControllerNode/JSONHandler.s: src/ControllerNode/JSONHandler.cpp.s
+
+.PHONY : src/ControllerNode/JSONHandler.s
+
+# target to generate assembly for a file
+src/ControllerNode/JSONHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/JSONHandler.cpp.s
+.PHONY : src/ControllerNode/JSONHandler.cpp.s
+
+src/ControllerNode/RequestManager.o: src/ControllerNode/RequestManager.cpp.o
+
+.PHONY : src/ControllerNode/RequestManager.o
+
+# target to build an object file
+src/ControllerNode/RequestManager.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/RequestManager.cpp.o
+.PHONY : src/ControllerNode/RequestManager.cpp.o
+
+src/ControllerNode/RequestManager.i: src/ControllerNode/RequestManager.cpp.i
+
+.PHONY : src/ControllerNode/RequestManager.i
+
+# target to preprocess a source file
+src/ControllerNode/RequestManager.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/RequestManager.cpp.i
+.PHONY : src/ControllerNode/RequestManager.cpp.i
+
+src/ControllerNode/RequestManager.s: src/ControllerNode/RequestManager.cpp.s
+
+.PHONY : src/ControllerNode/RequestManager.s
+
+# target to generate assembly for a file
+src/ControllerNode/RequestManager.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/ControllerNode/RequestManager.cpp.s
+.PHONY : src/ControllerNode/RequestManager.cpp.s
+
+src/RAID_5/DiskNode.o: src/RAID_5/DiskNode.cpp.o
+
+.PHONY : src/RAID_5/DiskNode.o
+
+# target to build an object file
+src/RAID_5/DiskNode.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/DiskNode.cpp.o
+.PHONY : src/RAID_5/DiskNode.cpp.o
+
+src/RAID_5/DiskNode.i: src/RAID_5/DiskNode.cpp.i
+
+.PHONY : src/RAID_5/DiskNode.i
+
+# target to preprocess a source file
+src/RAID_5/DiskNode.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/DiskNode.cpp.i
+.PHONY : src/RAID_5/DiskNode.cpp.i
+
+src/RAID_5/DiskNode.s: src/RAID_5/DiskNode.cpp.s
+
+.PHONY : src/RAID_5/DiskNode.s
+
+# target to generate assembly for a file
+src/RAID_5/DiskNode.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/DiskNode.cpp.s
+.PHONY : src/RAID_5/DiskNode.cpp.s
+
+src/RAID_5/Raid5Handler.o: src/RAID_5/Raid5Handler.cpp.o
+
+.PHONY : src/RAID_5/Raid5Handler.o
+
+# target to build an object file
+src/RAID_5/Raid5Handler.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/Raid5Handler.cpp.o
+.PHONY : src/RAID_5/Raid5Handler.cpp.o
+
+src/RAID_5/Raid5Handler.i: src/RAID_5/Raid5Handler.cpp.i
+
+.PHONY : src/RAID_5/Raid5Handler.i
+
+# target to preprocess a source file
+src/RAID_5/Raid5Handler.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/Raid5Handler.cpp.i
+.PHONY : src/RAID_5/Raid5Handler.cpp.i
+
+src/RAID_5/Raid5Handler.s: src/RAID_5/Raid5Handler.cpp.s
+
+.PHONY : src/RAID_5/Raid5Handler.s
+
+# target to generate assembly for a file
+src/RAID_5/Raid5Handler.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/Raid5Handler.cpp.s
+.PHONY : src/RAID_5/Raid5Handler.cpp.s
+
+src/RAID_5/TECMFS_Disk.o: src/RAID_5/TECMFS_Disk.cpp.o
+
+.PHONY : src/RAID_5/TECMFS_Disk.o
+
+# target to build an object file
+src/RAID_5/TECMFS_Disk.cpp.o:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/TECMFS_Disk.cpp.o
+.PHONY : src/RAID_5/TECMFS_Disk.cpp.o
+
+src/RAID_5/TECMFS_Disk.i: src/RAID_5/TECMFS_Disk.cpp.i
+
+.PHONY : src/RAID_5/TECMFS_Disk.i
+
+# target to preprocess a source file
+src/RAID_5/TECMFS_Disk.cpp.i:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/TECMFS_Disk.cpp.i
+.PHONY : src/RAID_5/TECMFS_Disk.cpp.i
+
+src/RAID_5/TECMFS_Disk.s: src/RAID_5/TECMFS_Disk.cpp.s
+
+.PHONY : src/RAID_5/TECMFS_Disk.s
+
+# target to generate assembly for a file
+src/RAID_5/TECMFS_Disk.cpp.s:
+	$(MAKE) -f CMakeFiles/RAID_5.dir/build.make CMakeFiles/RAID_5.dir/src/RAID_5/TECMFS_Disk.cpp.s
+.PHONY : src/RAID_5/TECMFS_Disk.cpp.s
 
 # Help Target
 help:
@@ -213,15 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RAID_5"
-	@echo "... RAID_5/DiskNode.o"
-	@echo "... RAID_5/DiskNode.i"
-	@echo "... RAID_5/DiskNode.s"
-	@echo "... RAID_5/TECMFS_Disk.o"
-	@echo "... RAID_5/TECMFS_Disk.i"
-	@echo "... RAID_5/TECMFS_Disk.s"
-	@echo "... RAID_5/main.o"
-	@echo "... RAID_5/main.i"
-	@echo "... RAID_5/main.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/ControllerNode/ControllerServer.o"
+	@echo "... src/ControllerNode/ControllerServer.i"
+	@echo "... src/ControllerNode/ControllerServer.s"
+	@echo "... src/ControllerNode/JSONHandler.o"
+	@echo "... src/ControllerNode/JSONHandler.i"
+	@echo "... src/ControllerNode/JSONHandler.s"
+	@echo "... src/ControllerNode/RequestManager.o"
+	@echo "... src/ControllerNode/RequestManager.i"
+	@echo "... src/ControllerNode/RequestManager.s"
+	@echo "... src/RAID_5/DiskNode.o"
+	@echo "... src/RAID_5/DiskNode.i"
+	@echo "... src/RAID_5/DiskNode.s"
+	@echo "... src/RAID_5/Raid5Handler.o"
+	@echo "... src/RAID_5/Raid5Handler.i"
+	@echo "... src/RAID_5/Raid5Handler.s"
+	@echo "... src/RAID_5/TECMFS_Disk.o"
+	@echo "... src/RAID_5/TECMFS_Disk.i"
+	@echo "... src/RAID_5/TECMFS_Disk.s"
 .PHONY : help
 
 

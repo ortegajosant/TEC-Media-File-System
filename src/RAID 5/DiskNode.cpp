@@ -8,10 +8,6 @@
 #include "DiskNode.h"
 #include "Estructuras/ListaDoble.h"
 
-
-DiskNode::DiskNode(string path) {
-    this->handler.setPath(path);
-}
 /**
  * Escribe un string en el disco. Toma el path desde TECMFS-Disk
  * @param stringToWirte string para escribri en el disco
@@ -21,7 +17,7 @@ DiskNode::DiskNode(string path) {
  */
 bool DiskNode::writeData(string stringToWirte, string name) {
     ofstream file;
-    file.open( handler.getPath()+"/"+name, ios::binary |ios::out);
+    file.open(this->path + "/" + name, ios::binary | ios::out);
     file.write(stringToWirte.c_str(), stringToWirte.length());
     file.close();
     return true;
@@ -36,16 +32,16 @@ bool DiskNode::writeData(string stringToWirte, string name) {
 string DiskNode::readData(string name) {
     long size;
     ifstream file;
-    file.open(handler.getPath()+"/"+name, ios::binary |ios::in);
+    file.open(this->path + "/" + name, ios::binary | ios::in);
     if (file.is_open()) {
         /// Obtener el largo del archivo7
         file.seekg(0, ios::end);
-        size = (long)file.tellg();
+        size = (long) file.tellg();
         file.seekg(0, ios::beg);
         /// Leer el archivo
-        char  *buffer = new char [size];
+        char *buffer = new char[size];
         file.seekg(0, ios::beg);
-        file.read(buffer,size);
+        file.read(buffer, size);
         file.close();
         /// Convierto en String la lectura
         string temp;
@@ -53,9 +49,9 @@ string DiskNode::readData(string name) {
             temp += buffer[i];
         }
         free(buffer);
-        return  temp;
-    }else {
-        cout << "Fichero inexistente" << endl;
+        return temp;
+    } else {
+        cout << "empty file" << endl;
     }
     return "";
 }
@@ -69,14 +65,15 @@ bool DiskNode::createDir() {
     DIR *dirp;
     struct dirent *direntp;
     /// Abrimos el directorio
-    if (( dirp = opendir(handler.getPath().c_str()) ) == NULL){
-        system(("mkdir "+handler.getPath()).c_str());
+    if ((dirp = opendir(this->path.c_str())) == NULL) {
+        system(("mkdir " + this->path).c_str());
         return true;
     }
-    cout <<"El directorio ya existe\n";
+    cout << "El directorio ya existe\n";
     closedir(dirp);
     return true;
 }
+
 /**
  * Lee todo lo que hay en la ubicacion del disco,
  * toma el path del TECMFS-Disk
@@ -87,11 +84,25 @@ List<string> DiskNode::readDir() {
     DIR *dir;
     dirent *ent;
     List<string> lista;
-    if (DIR* dir = opendir(handler.getPath().c_str())) {
-        while (dirent* ent = readdir(dir)) {
+    if (DIR *dir = opendir(this->path.c_str())) {
+        while (dirent *ent = readdir(dir)) {
             lista.add(ent->d_name);
         }
-        closedir (dir);
+        closedir(dir);
     }
     return lista;
+}
+
+DiskNode::DiskNode() {
+
+}
+
+DiskNode::DiskNode(string path, long maxStorage) {
+    this->path = path;
+    this->maxStroge = maxStorage;
+    this->createDir();
+}
+
+long DiskNode::freeData() {
+    return maxStroge - currentStorage;
 }

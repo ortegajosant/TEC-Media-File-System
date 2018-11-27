@@ -1,32 +1,15 @@
-#include <iostream>
-#include "DiskNode.h"
-#include "Estructuras/ListaDoble.h"
+//
+// Created by ortegajosant on 26/11/18.
+//
 
-using namespace std;
-int main(){
-    // Para construir un disco a la hora de instanciarlo
-    // le paso la ubicacion esa ubicacion se guarda en TECMFS-Disk
-    DiskNode disco0 = DiskNode("../Disco1");
-    disco0.createDir();
-    List<string> lista =disco0.readDir();
-    lista.printList();
-    cout << endl;
-    string prueba = disco0.readData("hj");
-    disco0.writeData(prueba, "text.txt");
-    return 0;
-}
-
-
-
-////////////////////////////////////////
-/// Controller Node ///Contiene  un main de prueba comentado abajo
+#include "Raid5Handler.h"
 
 #include <iostream>
 #include <cmath>
 #include <string.h>
 
 using namespace std;
-//private:
+
 /**
  * Parcea un string a binario
  *
@@ -34,7 +17,7 @@ using namespace std;
  * @return string con el codigo de 0s y 1s que
  *          representan la cadena de entrada en binario
  */
-std::string toBinary(std::string toBin){
+string Raid5Handler::toBinary(string toBin){
     string binary = "";
     char c;
     for (int j = 0; j < toBin.length(); ++j) {
@@ -53,7 +36,7 @@ std::string toBinary(std::string toBin){
  *           y con un largo de 8
  * @return numero que representa el caracter en el codigo ascii
  */
-int toDecimal(std::string numBin){
+int Raid5Handler::toDecimal(string numBin){
     int numDecimal = 0 ;
     for (int i = 0; i < 8; ++i) {
         if(numBin[i] == '1'){
@@ -71,7 +54,7 @@ int toDecimal(std::string numBin){
  * @return  char con el resultado de aplicar xor a los 3 valores
  *              puede ser un 0 o 1
  */
-char aux_xor(char c1, char c2, char c3){
+char Raid5Handler::aux_xor(char c1, char c2, char c3){
     char result = 0;
     if(c1 == c2){
         result = '0';
@@ -95,7 +78,7 @@ char aux_xor(char c1, char c2, char c3){
  * @param string3
  * @return string con la paridad de los tres cadenas
  */
-std::string paraty(std::string string1, std::string string2, std::string string3 ){
+string Raid5Handler::parity(string string1, string string2, string string3) {
     string bin1 = toBinary(string1);
     string bin2 = toBinary(string2);
     string bin3 = toBinary(string3);
@@ -116,18 +99,3 @@ std::string paraty(std::string string1, std::string string2, std::string string3
     }
     return result;
 }
-
-//int main() {
-//    string hola = "holaaaaa)9";
-//    string mundo = "mundoaaa%4";
-//    string esto = "oooooaaa+/";
-//    string paridad  = paraty(hola,mundo,esto);
-//    cout << paridad << endl;
-//
-//    cout << paraty(paridad,hola,esto) << endl;
-//    cout << paraty(mundo, esto, paridad);
-//    return 0;
-//}
-
-
-
